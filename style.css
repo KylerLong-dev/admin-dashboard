@@ -9,6 +9,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 5fr;
+    font-size: 1.1em;
 }
 
 li {
@@ -17,7 +18,7 @@ li {
 
 a {
     text-decoration: none;
-    color: whitesmoke;
+    color: rgb(26, 26, 26);
     font-weight: bold;
 }
 
@@ -27,16 +28,16 @@ a:hover {
 
 header {
     height: 100%;
-    border: 1px solid black;
     background-color: whitesmoke;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
 }
 
+/*Sidebar*/
+
 aside {
     height: 100%;
-    border: 1px solid black;
-    background: linear-gradient(to bottom, #a21caf, #e879f9);
+    background: linear-gradient(to bottom, #d946ef, #f0abfc);
     grid-column: 1 / 2;
     grid-row: 1 / 3;
     display: flex;
@@ -46,8 +47,18 @@ aside {
 
 .aside_logo {
     display: flex;
+    align-items: center;
     gap: 1em;
     padding: 1em;
+}
+
+.aside_logo h1 {
+    font-weight: bolder;
+}
+
+.aside_logo-icon {
+    width: 2.5em;
+    height: auto;
 }
 
 .aside_nav1, .aside_nav2 {
@@ -58,12 +69,17 @@ aside {
 }
 .aside_nav1 li, .aside_nav2 li {
     display: flex; 
+    align-items: center;
     gap: 1em;
+}
+
+.aside_nav1-icon, .aside_nav2-icon {
+    width: 1.5em;
+    height: auto;
 }
 
 main {
     height: 100%;
-    border: 1px solid black;
     background-color: rgb(171, 171, 171);
     grid-column: 2 / 3;
     grid-row: 2 / 3;
