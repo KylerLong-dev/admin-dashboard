@@ -72,12 +72,35 @@ header {
     grid-row: 1 / 2;
     display: flex;
     justify-self: end;
+    align-items: center;
+    gap: 1em;
+}
+
+.header_search img, .header_user-info img:nth-of-type(1){
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.header_user-info img:nth-of-type(2){
+    width: 2em;
+    height: auto;
+}
+
+.header_user-greeting img {
+    width: 3em;
+    height: 3em;
 }
 
 .header_user-greeting {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.header_user-greeting p {
+    font-size: .7em;
 }
 
 .header_buttons-wrap {
