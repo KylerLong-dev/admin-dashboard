@@ -217,6 +217,10 @@ main {
     padding: 1em;
 }
 
+.projects_card p {
+    color:rgb(72, 72, 72);
+}
+
 .announcements, .trending {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
@@ -235,9 +239,34 @@ main {
     background-color:#fdf4ff;
 }
 
+.announcements_card {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    padding: 1em;
+}
+
+.announcements_card p {
+    margin-bottom: .5em;
+    color:rgb(72, 72, 72);
+}
+
 .trending {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+}
+
+.trending_card {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+}
+
+.trending_card-item {
+    display: flex;
+    gap: 1em;
+    align-items: center;
 }
 
 
