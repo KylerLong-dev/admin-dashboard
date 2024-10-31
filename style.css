@@ -269,6 +269,11 @@ main {
     align-items: center;
 }
 
+.trending_card-item img {
+    width: 2em;
+    height: auto;
+}
+
 
 
 
